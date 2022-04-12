@@ -3,15 +3,13 @@
 <head class="page">
   <meta charset="utf-8">
   <title>Форма - подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo_1" href="index.html">
-        <img src="./img/logo-1.svg" alt="Логотип 1" width="33" height="38">
-      </a>
-      <a class="main-header__logo_2" href="index.html">
-        <img src="./img/logo-2.svg" alt="Логотип 2" width="101" height="18">
+      <a class="main-header__logo_1" href="">
+        <img src="./img/logo-mobile.svg" alt="Логотип" width="191" height="38">
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть/скрыть меню</span>
@@ -61,15 +59,15 @@
           <li class="params-item">
             <label class="control">
               <input class="control__input" name="cat-name" value="weight-loss" type="radio" checked>
-              <span>Похудение</span>
+              <span class="control__radio-label">Похудение</span>
             </label>
             <label class="control">
               <input class="control__input" name="cat-name" value="weight-gain" type="radio">
-              <span>Набор массы</span>
+              <span class="control__radio-label">Набор массы</span>
             </label>
             <label class="control">
               <input class="control__input" name="cat-name" value="unknown" type="radio">
-              <span>Не знаю (нужен ваш совет)</span>
+              <span class="control__radio-label">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -93,27 +91,27 @@
       </fieldset>
       <fieldset class="form__comment form-group">
         <legend class="form-group__title">Комментарий</legend>
-        <textarea name="comment" cols="30" rows="5">
+        <textarea class="control__input" name="comment" cols="30" rows="5">
           Расскажите обо всех повадках кота
         </textarea>
       </fieldset>
       <fieldset class="form__comment form-group">
         <legend class="form-group__title">Дополнительно</legend>
         <label class="control">
-          <input class="control-input" name="without-shugar" type="checkbox" checked>
-          <span>Сахарозаменитель</span>
+          <input class="control__input" name="without-shugar" type="checkbox" checked>
+          <span class="control__checkbox-label">Сахарозаменитель</span>
         </label>
         <label class="control">
-          <input class="control-input" name="water" type="checkbox">
-          <span>Питьевая вода</span>
+          <input class="control__input" name="water" type="checkbox">
+          <span class="control__checkbox-label">Питьевая вода</span>
         </label>
         <label class="control">
-          <input class="control-input" name="milk" type="checkbox">
-          <span>Молоко</span>
+          <input class="control__input" name="milk" type="checkbox">
+          <span class="control__checkbox-label">Молоко</span>
         </label>
         <label class="control">
-          <input class="control-input" name="vitamins" type="checkbox">
-          <span>Витамины</span>
+          <input class="control__input" name="vitamins" type="checkbox">
+          <span class="control__checkbox-label">Витамины</span>
         </label>
       </fieldset>
       <p class="form__required-note">* — Обязательные поля</p>
@@ -126,10 +124,12 @@
       <div class="contacts__address-wrapper">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map-wrapper">
         <img src="./img/location-mobile.jpg" alt="Карта с адресом" width="320" height="362">
       </div>
     </section>
-    <nav class="main-footer_nav footer-nav">
+    <nav class="main-footer__nav footer-nav">
       <a class="footer-nav__logo" href="index.html">
         <img src="./img/footer-logo.svg" alt="Логотип" width="128" height="24">
       </a>
@@ -154,10 +154,10 @@
         </ul>
       </section>
       <div class="footer-nav__html-academy html-academy">
-        <a class="html-academy-link" href="">
+        <a class="html-academy__link" href="">
           HTML Academy
         </a>
-        <a href="" class="html-academy-logo">
+        <a href="" class="html-academy__logo">
           <img src="./img/html-academy-logo.svg" alt="Логотип html-academy">
         </a>
       </div>
