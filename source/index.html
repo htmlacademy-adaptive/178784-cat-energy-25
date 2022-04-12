@@ -3,9 +3,9 @@
   <head class="page">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo_1" href="">
@@ -32,9 +32,9 @@
     </header>
     <main class="main-content">
       <section class="main-content__header">
-        <h1 class="main-header__title">Функциональное питание для котов</h1>
-        <p class="main-header__slogan">Занялся собой, займись котом</p>
-        <button class="main-header__choose_programm_button button">Подобрать программу</button>
+        <h1 class="main-content__header-title">Функциональное питание для котов</h1>
+        <p class="main-content__header-slogan">Занялся собой, займись котом</p>
+        <button class="main-content__choose-programm-button button button--sm">Подобрать программу</button>
       </section>
 
       <section class="main_content__programs">
@@ -44,14 +44,14 @@
           <p class="program-card__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a href="catalog.html">Каталог slim</a>
+          <a class="program-card__catalog-link" href="catalog.html">Каталог slim</a>
         </section>
         <section class="program-card program-card--weight-gain">
           <h3 class="program-card__title">Набор массы</h3>
           <p class="program-card__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a href="catalog.html">Каталог pro</a>
+          <a class="program-card__catalog-link" href="catalog.html">Каталог pro</a>
         </section>
       </section>
       <section class="main-content__instructions">
@@ -119,10 +119,12 @@
         <div class="contacts__address-wrapper">
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map-wrapper">
           <img src="./img/location-mobile.jpg" alt="Карта с адресом" width="320" height="362">
         </div>
       </section>
-      <nav class="main-footer_nav footer-nav">
+      <nav class="main-footer__nav footer-nav">
         <a class="footer-nav__logo">
           <img src="./img/footer-logo.svg" alt="Логотип" width="128" height="24">
         </a>
@@ -147,10 +149,10 @@
           </ul>
         </section>
         <div class="footer-nav__html-academy html-academy">
-          <a class="html-academy-link" href="">
+          <a class="html-academy__link" href="">
             HTML Academy
           </a>
-          <a href="" class="html-academy-logo">
+          <a href="" class="html-academy__logo">
             <img src="./img/html-academy-logo.svg" alt="Логотип html-academy">
           </a>
         </div>
