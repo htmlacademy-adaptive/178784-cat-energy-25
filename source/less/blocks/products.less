@@ -14,3 +14,36 @@
   text-align: center;
   color: #444444;
 }
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: auto;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 142px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
+}
+
+.products__item {
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.products__item:last-child {
+  border-bottom: 1px solid #ebebeb;
+}

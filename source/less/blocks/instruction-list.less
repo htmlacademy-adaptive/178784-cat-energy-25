@@ -1,3 +1,24 @@
+.instruction-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 94px;
+  }
+}
+
 .instruction-list__item-desctiption {
   font-family: "Arial", sans-serif;
   line-height: 18px;

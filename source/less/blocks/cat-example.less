@@ -1,5 +1,5 @@
 .cat-example {
-  background-color: #eaeaea;
+  position: relative;
 }
 
 .cat-example__title {
@@ -7,6 +7,15 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: unset;
+  }
 }
 
 .cat-example__desctiption {
@@ -14,4 +23,64 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
+}
+
+.cat-example__effects-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
+}
+
+.cat-example__effect-list {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: 366px;
+  }
+}
+
+.cat-example__cost-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: unset;
+  }
+}
+
+.cat-example__cost-name,
+.cat-example__cost-value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cat-example__visual-effect-wrapper {
+  width: 100%;
+  background-color: #eaeaea;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 100px;
+  }
 }
