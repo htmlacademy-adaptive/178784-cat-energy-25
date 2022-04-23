@@ -3,11 +3,11 @@
 }
 
 .main-footer__contacts-address-container {
-  width: @phone-width - 2*20px;
+  width: @container-phone-width;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - 2*30px;
+    width: @container-tablet-width - 2*30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,20 +23,12 @@
 }
 
 .main-footer__nav-container {
-  width: @phone-width - 2*20px;
-  margin: 0 auto;
-
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - 2*30px;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width - 2*110px;
   }
 }
 

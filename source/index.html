@@ -8,13 +8,15 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__container">
-        <a class="main-header__logo" href="">
-          <img src="./img/logo-mobile.svg" alt="Логотип" width="191" height="38">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/скрыть меню</span>
-        </button>
+      <div class="container container--full-width main-header__container">
+        <div class="main-header__container-header">
+          <a class="main-header__logo" href="">
+            <img src="./img/logo-mobile.svg" alt="Логотип" width="191" height="38">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/скрыть меню</span>
+          </button>
+        </div>
         <nav class="main-nav main-header__nav">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item nav-list__item--active">
@@ -32,16 +34,16 @@
 
     </header>
     <main class="main-content">
-      <section class="main-content__header">
+      <section class="container main-content__header">
         <h1 class="main-content__header-title">Функциональное питание для котов</h1>
         <p class="main-content__header-slogan">Занялся собой, займись котом!</p>
       </section>
-      <div class="main-content__choose-program-container">
+      <div class="container main-content__choose-program-container">
         <div class="main-content__cat-energy-bank"></div>
         <button class="main-content__choose-program-button button button--sm">Подобрать программу</button>
       </div>
 
-      <section class="main-content__programs">
+      <section class="container main-content__programs">
         <h2 class="visually-hidden">Примеры программ</h2>
         <section class="program-card program-card--weight-loss">
           <h3 class="program-card__title">Похудение</h3>
@@ -58,7 +60,8 @@
           <a class="program-card__catalog-link" href="catalog.html">Каталог pro</a>
         </section>
       </section>
-      <section class="main-content__instructions">
+
+      <section class="container main-content__instructions">
         <h2 class="main-content__instructions-title">Как это работает</h2>
         <ul class="instruction-list">
           <li class="instruction-list__item instruction-list__item--healthy">
@@ -83,9 +86,10 @@
           </li>
         </ul>
       </section>
+
       <section class="main-content__cat-example cat-example">
-        <h2 class="main-content__cat-example-title cat-example__title">Живой пример</h2>
-        <div class="main-content__cat-example-container">
+        <h2 class="container main-content__cat-example-title cat-example__title">Живой пример</h2>
+        <div class="container main-content__cat-example-container">
           <p class="cat-example__desctiption">Борис сбросил 5 кг за 2 месяца,
             просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок!
@@ -132,7 +136,7 @@
         </div>
       </section>
       <nav class="main-footer__nav footer-nav">
-        <div class="main-footer__nav-container">
+        <div class="container main-footer__nav-container">
           <a class="footer-nav__logo">
             <img src="./img/footer-logo.svg" alt="Логотип" width="128" height="24">
           </a>
