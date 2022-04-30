@@ -5,14 +5,18 @@
 .main-footer__contacts-address-container {
   width: @container-phone-width;
   margin: 0 auto;
+  padding: 26px 0;
 
   @media (min-width: @tablet-width) {
     width: @container-tablet-width - 2*30px;
+    padding: 56px 50px;
   }
 
   @media (min-width: @desktop-width) {
     width: 565px;
-    min-height: 198px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 56px 80px;
 
     position: absolute;
     top: 95px;
@@ -29,6 +33,8 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 52px;
   }
 }
 

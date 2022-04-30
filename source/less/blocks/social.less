@@ -1,0 +1,25 @@
+.social__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.social__link {
+  color: #666666;
+
+  &:hover,
+  &:active {
+    color: @basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

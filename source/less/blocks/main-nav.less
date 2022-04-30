@@ -1,9 +1,22 @@
+.main-nav__toggle-container {
+  @media (max-width: @phone-width-only) {
+    width: @container-phone-width;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 .main-nav__toggle {
   width: 24px;
+  height: 38px;
   background: none;
   border: none;
+  padding: 0;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: -55px;
+  z-index: 2;
 
   &:hover {
     opacity: 0.8;
@@ -18,7 +31,7 @@
   }
 }
 
-.main-nav__toggle--closed {
+.main-nav--closed .main-nav__toggle {
   &::before {
     content: "";
     position: absolute;
@@ -31,13 +44,13 @@
   }
 }
 
-.main-nav__toggle--opened {
+.main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 19.5px;
-    left: 0;
+    top: 18px;
+    left: 2px;
     width: 25px;
     height: 1.5px;
     background-color: @black;
@@ -53,14 +66,14 @@
 }
 
 @media (max-width: @phone-width-only) {
-  .main-nav--closed {
+  .main-nav--closed .nav-list {
     display: none;
   }
 
-  .main-nav--opened {
+  .main-nav--opened .nav-list {
     display: block;
     position: absolute;
-    top: 65px;
+    top: 64px;
     left: 0;
     right: 0;
     background-color: @white;
