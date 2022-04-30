@@ -19,8 +19,85 @@
   }
 }
 
+.instruction-list__item {
+  position: relative;
+
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: left 0 top 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 250px;
+    background-size: 80px 80px;
+    background-position: top 40px;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: -40px;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: 0;
+    }
+  }
+}
+
+.instruction-list__item--healthy {
+  background-image: url("../../img/healthy.svg");
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "1";
+      right: 43px;
+    }
+  }
+}
+
+.instruction-list__item--simple-cook {
+  background-image: url("../../img/simple-cook.svg");
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "2";
+    }
+  }
+}
+
+.instruction-list__item--replace-eat {
+  background-image: url("../../img/replace-eat.svg");
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "3";
+    }
+  }
+}
+
+.instruction-list__item--fast-effect {
+  background-image: url("../../img/fast-effect.svg");
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "4";
+    }
+  }
+}
+
 .instruction-list__item-desctiption {
+  position: relative;
+  margin: 0;
+  padding-left: 80px;
+  z-index: 1;
+
   font-family: "Arial", sans-serif;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding: 151px 0 57px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

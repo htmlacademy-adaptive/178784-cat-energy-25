@@ -1,18 +1,35 @@
 .button {
-  background-color: #68b738;
+  display: block;
+  background-color: @basic-green;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 26px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white;
+  border: none;
+  box-sizing: border-box;
 
-  display: block;
-}
+  &:hover,
+  &:active {
+    background-color: @basic-green2;
+  }
 
-.button--sm {
-  font-size: 14px;
+  &:active {
+    color: @white-opacity;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .button--secondary {
