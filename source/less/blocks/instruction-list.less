@@ -1,4 +1,6 @@
 .instruction-list {
+  counter-reset: instruction-number;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -32,6 +34,9 @@
     background-position: top 40px;
 
     &::after {
+      counter-increment: instruction-number;
+      content: counter(instruction-number);
+
       position: absolute;
       right: 0;
       top: -40px;
@@ -45,43 +50,18 @@
 
 .instruction-list__item--healthy {
   background-image: url("../../img/healthy.svg");
-
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "1";
-      right: 43px;
-    }
-  }
 }
 
 .instruction-list__item--simple-cook {
   background-image: url("../../img/simple-cook.svg");
-
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "2";
-    }
-  }
 }
 
 .instruction-list__item--replace-eat {
   background-image: url("../../img/replace-eat.svg");
-
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "3";
-    }
-  }
 }
 
 .instruction-list__item--fast-effect {
   background-image: url("../../img/fast-effect.svg");
-
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "4";
-    }
-  }
 }
 
 .instruction-list__item-desctiption {

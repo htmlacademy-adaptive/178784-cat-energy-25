@@ -229,33 +229,46 @@
   }
 }
 
+.main-footer__contacts-map-container {
+  height: @map-phone-height;
+
+  @media (min-width: @tablet-width) {
+    height: @map-tablet-height;
+  }
+}
+
 .main-footer__contacts-map-image {
-  @map-height: 362px;
-  display: block;
-  height: @map-height;
+  height: @map-phone-height;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 
   background-image: url("../../img/location-mobile.jpg");
-  background-size: @phone-width @map-height;
+  background-size: @phone-width @map-phone-height;
   background-repeat: no-repeat;
   background-position-x: center;
 
   @media (min-width: @tablet-width) {
-    @map-height: 400px;
-    height: @map-height;
+    height: @map-tablet-height;
     background-image: url("../../img/location-tablet.jpg");
-    background-size: @tablet-width @map-height;
+    background-size: @tablet-width @map-tablet-height;
   }
 
   @media (min-width: @desktop-width) {
-    height: @map-height;
     background-image: url("../../img/location-desktop.jpg");
-    background-size: @desktop-width @map-height;
+    background-size: @desktop-width @map-tablet-height;
   }
 }
 
 .main-footer__contacts-map {
   display: block;
-  height: 362px;
+  position: relative;
+  z-index: 2;
+  height: @map-phone-height;
   width: 100%;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    height: @map-tablet-height;
+  }
 }
