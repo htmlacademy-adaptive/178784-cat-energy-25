@@ -1,0 +1,32 @@
+.section-line {
+  position: relative;
+}
+
+.section-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: @basic-green;
+  z-index: 0;
+}
+
+.section-line__title {
+  margin: 0;
+  margin-left: -20px;
+  padding-right: 22px;
+  padding-left: 20px;
+  display: inline-block;
+  background-color: @white;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

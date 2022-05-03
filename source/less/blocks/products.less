@@ -1,20 +1,3 @@
-.products__show-more-title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #111111;
-}
-
-.products__show-more-description {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: #444444;
-}
-
 .products__list {
   margin: 0;
   padding: 0;
@@ -37,13 +20,20 @@
 }
 
 .products__item {
+  position: relative;
   border-top: 1px solid #ebebeb;
 
   @media (min-width: @tablet-width) {
     border: none;
+
+    padding-top: 81px;
   }
 }
 
 .products__item:last-child {
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

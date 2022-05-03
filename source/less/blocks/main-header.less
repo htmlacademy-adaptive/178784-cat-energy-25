@@ -1,7 +1,9 @@
 .main-header {
   min-width: 320px;
   position: relative;
+}
 
+.main-header--cat {
   @media (min-width: @desktop-width) {
     &::after {
       content: "";
@@ -14,6 +16,20 @@
       right: 0;
       left: 50%;
       min-height: 694px;
+    }
+  }
+
+  & .nav-list__link {
+    @media (min-width: @desktop-width) {
+      color: @white;
+    }
+  }
+
+  & .nav-list__item--active {
+    @media (min-width: @desktop-width) {
+      &::after {
+        background-color: @white;
+      }
     }
   }
 }
