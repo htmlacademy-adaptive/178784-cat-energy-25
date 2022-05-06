@@ -84,7 +84,7 @@
 
 .main-content__title {
   padding-top: 27px;
-  padding-bottom: 41px;
+  margin-bottom: 41px;
 
   font-size: 36px;
   font-weight: 400;
@@ -92,20 +92,40 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 64px;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
 
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 84px;
+  }
 }
 
-.main-content__form-title {
+.main-content__title--form {
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.main-content__form-instruction {
+  margin-bottom: 39px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+
     font-size: 20px;
     line-height: 30px;
   }

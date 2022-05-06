@@ -44,7 +44,14 @@
       <ul class="products__list">
         <li class="products__item">
           <div class="product-card">
-            <img class="product-card__image" src="./img/cat-energy-pro-chicken-500.png" width="140" height="112" alt="Cat Energy Pro Chicken 500г">
+
+            <picture class="product-card__picture">
+              <source srcset="./img/cat-energy-pro-chicken-500-tablet.png" media="(min-width: 768px)">
+              <source srcset="./img/cat-energy-pro-chicken-500-desktop.png" media="(min-width: 1440px)">
+              <img class="product-card__image" src="./img/cat-energy-pro-chicken-500.png" alt="Cat Energy Pro Chicken 500г">
+            </picture>
+
+
             <div class="product-card__container">
               <p class="product-card__title">Cat Energy PRO 500 г</p>
               <dl class="product-card__properties">
