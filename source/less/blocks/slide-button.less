@@ -1,4 +1,4 @@
-.toggle-button {
+.slide-button {
   width: 86px;
   height: 14px;
   padding-left: 6px;
@@ -21,7 +21,7 @@
   }
 }
 
-.toggle-button__indicator {
+.slide-button__indicator {
   width: 36px;
   height: 6px;
   border: none;
@@ -37,6 +37,14 @@
     background-color: @white;
     transform: translateX(196px);
 
+    &:active {
+      border-color: #68b738;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -45,15 +53,15 @@
       border-radius: 4px;
       background-color: #68b738;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(12px, -50%);
     }
   }
 }
 
-.toggle-button--off {
+.slide-button--off {
   justify-content: flex-start;
 }
 
-.toggle-button--on {
+.slide-button--on {
   justify-content: flex-end;
 }

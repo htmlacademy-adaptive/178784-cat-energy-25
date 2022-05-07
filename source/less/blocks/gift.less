@@ -1,13 +1,33 @@
 .gift {
-  min-height: 290px;
+  padding: 186px 61px 43px 58px;
+  margin-bottom: 35px;
 
   background: rgba(104, 183, 56, 0.85);
   background-image: url("../../img/gift.jpg");
   background-size: 280px 290px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+    margin-bottom: 76px;
+
+    background-image: url("../../img/gift-tablet.jpg");
+    background-size: 707px 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    max-width: 245px;
+    padding: 185px 43px 42px 41px;
+    margin: 0;
+
+    background-image: url("../../img/gift-desktop.jpg");
+    background-size: 245px 289px;
+  }
 }
 
 .gift__description {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;

@@ -1,22 +1,47 @@
 .toggle {
   display: flex;
   justify-content: center;
+}
+
+.toggle__slide-button {
+  align-self: center;
+}
+
+.toggle__button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
 
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border-bottom: 1px dotted #b8b8b8;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &:hover {
+      border-bottom: 1px solid #919191;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
+  }
 }
 
-.toggle__toggle-button {
-  align-self: center;
-}
-
-.toggle__off-label {
+.toggle__button--off {
   margin-right: 19px;
 }
 
-.toggle__on-label {
+.toggle__button--on {
   margin-left: 18px;
 }

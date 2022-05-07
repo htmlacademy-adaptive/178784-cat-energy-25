@@ -57,11 +57,14 @@
 }
 
 .main-content__header-slogan {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+
   line-height: 14px;
   text-transform: uppercase;
   color: @white;
   text-align: center;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     color: @black;
@@ -73,24 +76,56 @@
   }
 }
 
+.main-content__title-container {
+  @media (max-width: @phone-width-only) {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+
 .main-content__title {
+  padding-top: 27px;
+  margin-bottom: 41px;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 64px;
+    margin-bottom: 82px;
+
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 84px;
+  }
 }
 
-.main-content__form-title {
+.main-content__title--form {
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.main-content__form-instruction {
+  margin-bottom: 39px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+
     font-size: 20px;
     line-height: 30px;
   }
@@ -229,33 +264,26 @@
   }
 }
 
-.main-footer__contacts-map-image {
-  @map-height: 362px;
-  display: block;
-  height: @map-height;
-
-  background-image: url("../../img/location-mobile.jpg");
-  background-size: @phone-width @map-height;
-  background-repeat: no-repeat;
-  background-position-x: center;
+.main-content__products {
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    @map-height: 400px;
-    height: @map-height;
-    background-image: url("../../img/location-tablet.jpg");
-    background-size: @tablet-width @map-height;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    height: @map-height;
-    background-image: url("../../img/location-desktop.jpg");
-    background-size: @desktop-width @map-height;
+    margin-bottom: 76px;
   }
 }
 
-.main-footer__contacts-map {
-  display: block;
-  height: 362px;
-  width: 100%;
-  border: none;
+.main-content__additional-products-title {
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 81px;
+  }
 }
