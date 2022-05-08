@@ -85,11 +85,6 @@
     width: 40px;
     height: 40px;
   }
-
-  .control--radio:hover .control__mark,
-  .control--checkbox:hover .control__mark {
-    outline-color: #bababa;
-  }
 }
 
 .control__input[type="text"],
@@ -148,6 +143,20 @@
 
   & + .control__mark::before {
     outline-color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.control__input[type="radio"]:hover,
+.control__input[type="checkbox"]:hover {
+  & + .control__mark {
+    outline: 1px solid #bababa;
+  }
+}
+
+.control__input[type="radio"]:focus,
+.control__input[type="checkbox"]:focus {
+  & + .control__mark {
+    outline: 2px solid #444444;
   }
 }
 

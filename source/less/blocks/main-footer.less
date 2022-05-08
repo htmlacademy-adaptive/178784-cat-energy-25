@@ -1,8 +1,9 @@
 .main-footer {
-  background-color: #f2f2f2;
+  background-color: @white;
 }
 
 .main-footer__contacts {
+  background-color: @white;
   position: relative;
 }
 
@@ -67,15 +68,27 @@
   background-repeat: no-repeat;
   background-position-x: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/location-mobile-2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     height: @map-tablet-height;
     background-image: url("../../img/location-tablet.jpg");
     background-size: @tablet-width @map-tablet-height;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/location-tablet-2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../../img/location-desktop.jpg");
     background-size: @desktop-width @map-tablet-height;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/location-desktop-2x.jpg");
+    }
   }
 }
 
