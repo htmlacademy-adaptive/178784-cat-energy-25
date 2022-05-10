@@ -1,5 +1,9 @@
 .main-header {
   position: relative;
+
+  @media (max-width: @phone-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
 .main-header--cat {
@@ -73,14 +77,11 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 53px;
-    padding-bottom: 111px;
+    padding-bottom: 73px;
   }
 }
 
 .main-header__logo {
-  width: 191px;
-  height: 38px;
-
   &:hover {
     opacity: 0.8;
   }
