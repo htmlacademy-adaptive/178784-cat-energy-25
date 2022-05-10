@@ -3,8 +3,16 @@
 }
 
 .main-footer__contacts {
-  background-color: @white;
+  background-color: @basic-grey;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+  }
+}
+
+.main-footer__contacts--index {
+  background-color: @white;
 }
 
 .main-footer__contacts-address-container {
