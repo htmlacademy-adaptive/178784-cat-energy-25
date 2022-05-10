@@ -9,9 +9,12 @@
   margin-bottom: 138px;
   background: linear-gradient(@transparent-green, @transparent-green), url("../../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px auto;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(@transparent-green, @transparent-green), url("../../img/index-background-mobile-2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     min-height: unset;
@@ -40,7 +43,6 @@
     width: 420px;
     padding-top: 0;
     margin: unset;
-    margin-top: 48px;
     margin-bottom: 41px;
     margin-left: 97px;
     font-size: 60px;
@@ -52,7 +54,6 @@
   @media (min-width: @desktop-width) {
     margin-left: 90px;
     margin-bottom: 40px;
-    margin-top: 95px;
   }
 }
 
@@ -166,12 +167,16 @@
   width: 100%;
   height: 270px;
   background-image: url("../../img/cat-energy-chicken-mobile.png");
-  background-size: 280px 270px;
+  background-size: 280px auto;
   background-repeat: no-repeat;
   background-position-x: center;
   position: absolute;
   z-index: 0;
   bottom: 43px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat-energy-chicken-mobile-2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/cat-energy-chicken-tablet.png");
@@ -179,6 +184,10 @@
     bottom: unset;
     top: -29px;
     height: 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-energy-chicken-tablet-2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -188,6 +197,10 @@
     top: -314px;
     left: 124px;
     height: 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-energy-chicken-desktop-2x.png");
+    }
   }
 }
 
@@ -239,12 +252,6 @@
   }
 }
 
-.main-content__cat-example-container {
-  @media (min-width: @desktop-width) {
-    background-color: #f2f2f2;
-  }
-}
-
 .main-content__cat-example {
   width: 100%;
   background-color: #eaeaea;
@@ -254,13 +261,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: #eaeaea;
-  }
-}
-
-.main-content__cat-example-title {
-  @media (min-width: @desktop-width) {
-    background-color: @white;
+    background-color: #f2f2f2;
   }
 }
 

@@ -1,14 +1,27 @@
+.visual-effect {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 591px;
+    min-height: 576px;
+    padding-top: 536px;
+    box-sizing: border-box;
+  }
+}
+
 .visual-effect__image {
   @media (max-width: @phone-width-only) {
     height: 232px;
-    background-size: 280px 232px;
+    background-size: 280px auto;
     background-repeat: no-repeat;
     background-position-x: center;
   }
 
   @media (min-width: @tablet-width) {
     height: 511px;
-    background-size: 591px 511px;
+    width: 591px;
+    top: 0;
+    background-size: auto 511px;
     background-repeat: no-repeat;
     background-position-x: center;
   }
@@ -17,10 +30,22 @@
 .visual-effect__image--before {
   @media (max-width: @phone-width-only) {
     background-image: url("../../img/cat-before-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-before-mobile-2x.png");
+    }
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/cat-slider.png");
+    position: absolute;
+    width: 296px;
+    left: 0;
+    background-position: 0 0;
+    background-image: url("../../img/cat-before-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-before-tablet-2x.png");
+    }
   }
 }
 
@@ -30,10 +55,24 @@
   @media (max-width: @phone-width-only) {
     background-image: url("../../img/cat-after-mobile.png");
   }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 296px;
+    right: 0;
+    background-position: right 0 top 0;
+    background-image: url("../../img/cat-after-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-after-tablet-2x.png");
+    }
+  }
 }
 
 .visual-effect__image--off {
-  display: none;
+  @media (max-width: @phone-width-only) {
+    display: none;
+  }
 }
 
 .visual-effect__toggle {

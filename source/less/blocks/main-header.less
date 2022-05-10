@@ -1,5 +1,4 @@
 .main-header {
-  min-width: 320px;
   position: relative;
 }
 
@@ -10,12 +9,21 @@
       background: linear-gradient(@transparent-green, @transparent-green),
         url("../../img/header-background-desktop.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 720px auto;
       position: absolute;
       top: 0;
       right: 0;
       left: 50%;
       min-height: 694px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background: linear-gradient(@transparent-green, @transparent-green),
+          url("../../img/header-background-desktop-2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 720px auto;
+      }
     }
   }
 
@@ -37,7 +45,6 @@
 .main-header__container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
   position: relative;
   z-index: 1;
 
@@ -51,11 +58,22 @@
   display: flex;
   justify-content: space-between;
 
+  padding-top: 10px;
   padding-bottom: 16px;
 
   @media (max-width: @phone-width-only) {
     width: @container-phone-width;
     margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 111px;
   }
 }
 
@@ -72,3 +90,14 @@
   }
 }
 
+.main-header__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
