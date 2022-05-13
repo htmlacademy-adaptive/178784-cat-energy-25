@@ -23,3 +23,9 @@
     width: @container-desktop-width;
   }
 }
+
+.container--form {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    width: @tablet-width - 2*70px;
+  }
+}

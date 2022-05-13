@@ -10,6 +10,7 @@
 
 .toggle__button {
   display: inline-block;
+  max-width: 50px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -38,12 +39,24 @@
       border-bottom: 1px solid transparent;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 47px;
+  }
 }
 
 .toggle__button--off {
   margin-right: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 24px;
+  }
 }
 
 .toggle__button--on {
   margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 24px;
+  }
 }

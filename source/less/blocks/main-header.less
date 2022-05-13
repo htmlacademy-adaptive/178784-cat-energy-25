@@ -13,12 +13,12 @@
       background: linear-gradient(@transparent-green, @transparent-green),
         url("../../img/header-background-desktop.jpg");
       background-repeat: no-repeat;
-      background-size: 720px auto;
+      background-size: cover;
       position: absolute;
-      top: 0;
-      right: 0;
-      left: 50%;
-      min-height: 694px;
+      top: -39px;
+      right: -20px;
+      left: calc(50% + 11px);
+      min-height: 700px;
     }
 
     @media (min-resolution: 2dppx) {
@@ -58,12 +58,18 @@
   }
 }
 
+.main-header__container--index {
+  @media (min-width: @desktop-width) {
+    width: 1245px;
+  }
+}
+
 .main-header__container-header {
   display: flex;
   justify-content: space-between;
 
   padding-top: 10px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 
   @media (max-width: @phone-width-only) {
     width: @container-phone-width;
@@ -72,12 +78,30 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 24px;
-    padding-bottom: 64px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 53px;
-    padding-bottom: 73px;
+    padding-top: 20px;
+    padding-bottom: 107px;
+  }
+}
+
+.main-header__container-header--form {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 71px;
+  }
+}
+
+.main-header__container-header--index {
+  @media (min-width: @desktop-width) {
+    padding-left: 23px;
+  }
+}
+
+.main-header__container-header--catalog {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 72px;
   }
 }
 

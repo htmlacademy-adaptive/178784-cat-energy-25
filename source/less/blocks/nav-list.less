@@ -4,8 +4,9 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    width: 440px;
+    width: 474px;
     margin-top: 32px;
+    margin-right: -16px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,16 +15,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 478px;
-    margin-top: 61px;
+    width: 491px;
+    margin-right: -4px;
+    margin-top: 26px;
   }
 }
 
 .nav-list__link {
+  position: relative;
   display: flex;
   justify-content: center;
   padding-top: 22px;
   padding-bottom: 23px;
+
   cursor: pointer;
   text-decoration: none;
 
@@ -43,8 +47,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -52,8 +55,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 8px 0;
 
     font-size: 20px;
     line-height: 30px;
@@ -61,26 +63,23 @@
 }
 
 .nav-list__item {
-  position: relative;
+  padding: 0 17px;
 
   @media (max-width: @phone-width-only) {
     border-top: 1px solid #e6e6e6;
+    padding: 0;
 
     &:last-child {
       border-bottom: 1px solid #e6e6e6;
     }
   }
 
-  @media (min-width: @tablet-width) {
-    margin-right: 34px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 0 6px;
   }
 }
 
-.nav-list__item--active {
+.nav-list__item--active .nav-list__link {
   @media (min-width: @tablet-width) {
     &::after {
       content: "";
@@ -89,6 +88,12 @@
       width: 100%;
       height: 2px;
       background-color: @basic-green;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-color: @white;
     }
   }
 }
