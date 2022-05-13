@@ -13,6 +13,7 @@
 }
 
 .section-line__title {
+  max-width: 182px;
   margin: 0;
   margin-left: -20px;
   padding-right: 22px;
@@ -23,10 +24,27 @@
   z-index: 1;
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
 
   @media (min-width: @tablet-width) {
+    max-width: unset;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -41px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+
+.section-line__title--catalog {
+  line-height: 24px;
+  padding-left: 58px;
+  padding-right: 36px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
   }
 }

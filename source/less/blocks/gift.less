@@ -12,7 +12,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 71px 124px 69px 422px;
+    padding: 71px 122px 69px 424px;
     margin-bottom: 76px;
 
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/gift-tablet.jpg");
@@ -73,4 +73,12 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-align: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }

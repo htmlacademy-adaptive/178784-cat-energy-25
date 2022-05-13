@@ -1,13 +1,19 @@
 .social__list {
+  max-width: 300px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .social__item {
   &:not(:last-child) {
-    margin-right: 24px;
+    margin-right: 28px;
   }
 }
 

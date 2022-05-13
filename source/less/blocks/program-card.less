@@ -1,9 +1,12 @@
 .program-card {
   background-color: @basic-grey;
-  min-height: 266px;
+  min-height: 236px;
+
+  padding: 30px 20px 0 20px;
 
   @media (min-width: @tablet-width) {
-    min-height: 372px;
+    min-height: 259px;
+    padding: 77px 52px 0 52px;
   }
 }
 
@@ -13,13 +16,12 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  margin-top: 30px;
-  margin-left: 91px;
+  margin-left: 71px;
   margin-bottom: 29px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 77px;
-    margin-left: 53px;
+    margin-left: 0;
     margin-bottom: 24px;
 
     font-size: 36px;
@@ -27,22 +29,21 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 214px;
+    margin-left: 161px;
     margin-bottom: 73px;
   }
 }
 
 .program-card__description {
-  margin: 0 20px;
+  margin: 0;
   margin-bottom: 23px;
   font-family: "Arial", sans-serif;
   line-height: 18px;
   color: #444444;
 
   @media (min-width: @tablet-width) {
-    margin-left: 52px;
-    margin-bottom: 48px;
-    margin-right: 316px;
+    margin-bottom: 52px;
+    margin-right: 260px;
 
     font-size: 16px;
     line-height: 24px;
@@ -50,14 +51,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 52px;
-    margin-bottom: 23px;
-    margin-right: 51px;
+    margin-right: 0;
+    margin-bottom: 28px;
   }
 }
 
 .program-card__horizontal-line {
-  margin: 0 20px 15px 20px;
+  margin: 0;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -66,7 +67,8 @@
 
 .program-card__catalog-link {
   display: inline-block;
-  margin: 0 auto 18px 20px;
+  margin: 0;
+  margin-bottom: 18px;
   position: relative;
 
   font-size: 16px;
@@ -121,15 +123,13 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 57px;
-    margin-left: 52px;
-    padding-right: 57px;
+    padding-right: 59px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 55px;
-    margin-left: 52px;
     padding-right: 60px;
   }
 }
@@ -149,7 +149,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("../../img/cat-slim-desktop.svg");
     background-size: 100px 106px;
-    background-position: top 41px left 52px;
+    background-position: top 41px left 51px;
   }
 }
 
@@ -168,6 +168,6 @@
   @media (min-width: @desktop-width) {
     background-image: url("../../img/cat-pro-desktop.svg");
     background-size: 134px 100px;
-    background-position: top 47px left 33px;
+    background-position: top 47px left 32px;
   }
 }

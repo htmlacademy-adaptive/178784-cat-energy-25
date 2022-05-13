@@ -39,10 +39,12 @@
 }
 
 .control__label {
+  max-width: 150px;
   margin-right: 12px;
-  line-height: 46px;
+  line-height: 44px;
 
   @media (min-width: @tablet-width) {
+    max-width: 300px;
     margin-right: 15px;
     line-height: 52px;
   }
@@ -55,7 +57,7 @@
 
 
 .control__input {
-  padding: 12px 15px 15px 15px;
+  padding: 11px 15px 15px 15px;
   border: none;
   outline: 1px solid #e7e7e7;
 
@@ -86,6 +88,14 @@
     height: 40px;
   }
 }
+
+.control--checkbox .control__mark {
+  @media (min-width: @desktop-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 
 .control__input[type="text"],
 .control__input[type="number"],
@@ -187,12 +197,12 @@
   position: absolute;
   width: 18px;
   height: 13px;
-  top: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 15px;
   stroke: #222222;
 
   @media (min-width: @tablet-width) {
-    top: 19px;
     right: 19px;
   }
 }
@@ -213,12 +223,12 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 13px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 13px;
   color: #222222;
 
   @media (min-width: @tablet-width) {
-    top: 16px;
     right: 17px;
   }
 }
@@ -232,13 +242,19 @@
 }
 
 .control__input--textarea {
+  box-sizing: border-box;
   width: 100%;
-  min-height: 151px;
+  min-height: 147px;
   padding: 9px 15px;
   resize: none;
   text-align: start;
 
   @media (min-width: @tablet-width) {
     min-height: 174px;
+    padding: 9px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 172px;
   }
 }

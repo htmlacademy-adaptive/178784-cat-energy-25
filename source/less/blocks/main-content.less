@@ -17,13 +17,16 @@
   }
 
   @media (min-width: @tablet-width) {
+    width: @container-tablet-width;
+    margin: 0 auto;
+    margin-bottom: 49px;
     min-height: unset;
     background-image: none;
     background-color: unset;
-    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
+    width: @container-desktop-width;
     margin-bottom: 52px;
   }
 }
@@ -44,7 +47,7 @@
     padding-top: 0;
     margin: unset;
     margin-bottom: 41px;
-    margin-left: 97px;
+    margin-left: 87px;
     font-size: 60px;
     line-height: 60px;
     text-align: unset;
@@ -60,7 +63,6 @@
 .main-content__header-slogan {
   position: relative;
   z-index: 1;
-  margin: 0;
 
   line-height: 14px;
   text-transform: uppercase;
@@ -72,7 +74,7 @@
     font-size: 20px;
     line-height: 20px;
     width: 420px;
-    margin-left: 97px;
+    margin-left: 89px;
     text-align: start;
   }
 }
@@ -83,7 +85,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 162px;
+    margin-bottom: 166px;
   }
 }
 
@@ -106,6 +108,10 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 84px;
   }
+}
+
+.main-content__title--catalog {
+  margin-bottom: 39px;
 }
 
 .main-content__title--form {
@@ -150,7 +156,8 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
+    padding-left: 22px;
   }
 }
 
@@ -176,7 +183,7 @@
   background-position-x: center;
   position: absolute;
   z-index: 0;
-  bottom: 37px;
+  bottom: 43px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/cat-energy-chicken-mobile-2x.png");
@@ -198,8 +205,8 @@
     background-image: url("../../img/cat-energy-chicken-desktop.png");
     background-size: 552px 499px;
     bottom: unset;
-    top: -269px;
-    left: 115px;
+    top: -313px;
+    left: 125px;
     height: 499px;
 
     @media (min-resolution: 2dppx) {
@@ -213,13 +220,16 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  font-size: 14px;
 
   @media (min-width: @tablet-width) {
+    width: unset;
     margin: unset;
-    margin-left: 97px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 244px;
+    margin-left: 80px;
+    padding: 17px 27px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: unset;
   }
 
   @media (min-width: @desktop-width) {
@@ -232,7 +242,7 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 43px;
+    padding-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
@@ -248,13 +258,16 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
-    text-align: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+    margin-left: 11px;
   }
 }
 
@@ -272,25 +285,25 @@
 }
 
 .main-content__products {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 80px;
   }
 }
 
 .main-content__additional-products-title {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 81px;
+    margin-bottom: 79px;
   }
 }
