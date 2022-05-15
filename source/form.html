@@ -18,7 +18,7 @@
   <header class="main-header">
     <div class="container container--phone-full-width main-header__container">
       <div class="main-header__container-header main-header__container-header--form">
-        <a class="main-header__logo" href="index.html">
+        <a class="main-header__logo" href="index.html" aria-label="На главную">
           <picture>
             <source media="(min-width: 1440px)" srcset="../../img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="../../img/logo-tablet.svg">
@@ -54,15 +54,15 @@
       <div class="container container--form form__main-params-container">
         <fieldset class="fieldset form__about">
             <label class="control">
-              <span class="control__label">Имя:*</span>
+              <span class="control__label control__label--name">Имя:*</span>
               <input class="control__input" name="cat-name" value="Барсик" type="text" required>
             </label>
             <label class="control">
-              <span class="control__label">Вес (кг):*</span>
+              <span class="control__label control__label--weight">Вес (кг):*</span>
               <input class="control__input" name="cat-weight" value="7" type="number" required>
             </label>
             <label class="control">
-              <span class="control__label">Возраст (лет):</span>
+              <span class="control__label control__label--age">Возраст&nbsp;(лет):</span>
               <input class="control__input" name="cat-age" value="7" type="number">
             </label>
         </fieldset>
@@ -71,23 +71,23 @@
           <label class="control control--radio">
             <input class="control__input visually-hidden" name="cat-name" value="weight-loss" type="radio" checked>
             <span class="control__mark"></span>
-            <span class="control__radio-label">Похудение</span>
+            <span class="control__label--radio">Похудение</span>
           </label>
           <label class="control control--radio">
             <input class="control__input visually-hidden" name="cat-name" value="weight-gain" type="radio">
             <span class="control__mark"></span>
-            <span class="control__radio-label">Набор массы</span>
+            <span class="control__label--radio">Набор массы</span>
           </label>
           <label class="control control--radio">
             <input class="control__input visually-hidden" name="cat-name" value="unknown" type="radio">
             <span class="control__mark"></span>
-            <span class="control__radio-label">Не знаю (нужен ваш совет)</span>
+            <span class="control__label--radio">Не знаю (нужен ваш совет)</span>
           </label>
         </fieldset>
         <div class="horizontal-line--infinite form__horizontal-line"></div>
       </div>
 
-      <div class="form__additional-products-title section-line">
+      <div class="form__additional-products-title section-line section-line--contacts">
         <div class="container container--form">
           <h2 class="section-line__title">Контактные данные (владельца кота)</h2>
         </div>
@@ -96,7 +96,7 @@
       <fieldset class="container container--form form__contacts fieldset">
         <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
         <label class="control">
-          <span class="control__label">E-mail:*</span>
+          <span class="control__label control__label--email">E-mail:*</span>
           <input class="control__input" name="owner-email" type="email" value="kuklachev@gmail.com" required>
           <svg class="control__mark" width="19" height="14">
             <use xlink:href="img/sprite.svg#email"></use>
@@ -136,22 +136,22 @@
         <label class="control control--checkbox">
           <input class="control__input visually-hidden" name="without-shugar" type="checkbox" checked>
           <span class="control__mark"></span>
-          <span class="control__checkbox-label">Сахарозаменитель</span>
+          <span class="control__label--checkbox">Сахарозаменитель</span>
         </label>
         <label class="control control--checkbox">
           <input class="control__input visually-hidden" name="water" type="checkbox">
           <span class="control__mark"></span>
-          <span class="control__checkbox-label">Питьевая вода</span>
+          <span class="control__label--checkbox">Питьевая вода</span>
         </label>
         <label class="control control--checkbox">
           <input class="control__input visually-hidden" name="milk" type="checkbox">
           <span class="control__mark"></span>
-          <span class="control__checkbox-label">Молоко</span>
+          <span class="control__label--checkbox">Молоко</span>
         </label>
         <label class="control control--checkbox">
           <input class="control__input visually-hidden" name="vitamins" type="checkbox">
           <span class="control__mark"></span>
-          <span class="control__checkbox-label">Витамины</span>
+          <span class="control__label--checkbox">Витамины</span>
         </label>
       </fieldset>
       <footer class="container container--form form__footer">
@@ -175,7 +175,7 @@
     <nav class="main-footer__nav footer-nav">
       <div class="container main-footer__nav-container">
         <div class="footer-nav__logo-container">
-          <a class="footer-nav__logo">
+          <a class="footer-nav__logo" href="index.html" aria-label="На главную">
             <img src="./img/footer-logo.svg" alt="Логотип" width="128" height="24">
           </a>
         </div>
