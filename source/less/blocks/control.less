@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -89,7 +89,7 @@
   border: none;
   outline: 1px solid #e7e7e7;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -142,6 +142,11 @@
   &:invalid {
     outline: 2px solid @status-error;
   }
+}
+
+.control__input[type="number"] {
+  /* stylelint-disable -- отключает стрелки изменения числа по-умолчанию*/
+  -moz-appearance: textfield;
 }
 
 .control__input[type="radio"] + .control__mark {
@@ -231,6 +236,10 @@
   stroke: #222222;
 
   @media (min-width: @tablet-width) {
+    right: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
     right: 19px;
   }
 }
@@ -257,6 +266,10 @@
   color: #222222;
 
   @media (min-width: @tablet-width) {
+    right: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
     right: 17px;
   }
 }
