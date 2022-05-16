@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
 
 .control--radio {
   padding-left: 46px;
-  line-height: 30px;
+  line-height: 31px;
   color: #222222;
 
   @media (min-width: @tablet-width) {
@@ -67,7 +67,7 @@
   margin-right: 14px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 17px;
+    margin-right: 18px;
   }
 }
 
@@ -85,11 +85,11 @@
 
 
 .control__input {
-  padding: 13px 15px 14px 15px;
+  padding: 13px 10px 12px 15px;
   border: none;
   outline: 1px solid #e7e7e7;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -107,17 +107,22 @@
 .control--checkbox .control__mark {
   position: absolute;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   outline: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 }
 
 .control--checkbox .control__mark {
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 38px;
     height: 38px;
@@ -142,6 +147,11 @@
   &:invalid {
     outline: 2px solid @status-error;
   }
+}
+
+.control__input[type="number"] {
+  /* stylelint-disable -- отключает стрелки изменения числа по-умолчанию*/
+  -moz-appearance: textfield;
 }
 
 .control__input[type="radio"] + .control__mark {
@@ -201,14 +211,22 @@
 .control__input[type="checkbox"]:checked + .control__mark::before {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 26px;
-  top: 2px;
-  left: 2px;
+  width: 21px;
+  height: 21px;
+  top: 3px;
+  left: 5px;
   border: none;
   background-image: url("../../img/checked.svg");
   background-repeat: no-repeat;
-  background-size: 26px 26px;
+  background-size: 21px 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+    background-size: 26px 26px;
+    top: 7px;
+    left: 7px;
+  }
 
   @media (min-width: @tablet-width) {
     top: 7px;
@@ -231,6 +249,10 @@
   stroke: #222222;
 
   @media (min-width: @tablet-width) {
+    right: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
     right: 19px;
   }
 }
@@ -257,6 +279,10 @@
   color: #222222;
 
   @media (min-width: @tablet-width) {
+    right: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
     right: 17px;
   }
 }
@@ -272,7 +298,7 @@
 .control__input--textarea {
   box-sizing: border-box;
   width: 100%;
-  min-height: 147px;
+  min-height: 148px;
   padding: 9px 15px;
   resize: none;
   text-align: start;

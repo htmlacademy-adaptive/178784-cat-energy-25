@@ -8,13 +8,14 @@
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    padding: 28px 38px 29px 38px;
+    padding: 28px 38px 28px 38px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     padding-top: 15px;
     padding-bottom: 16px;
+    align-items: baseline;
   }
 }
 
@@ -61,9 +62,8 @@
 
   @media (min-width: @desktop-width) {
     flex-grow: unset;
-    flex-basis: 288px;
+    flex-basis: 326px;
     justify-content: space-between;
-    margin-right: 38px;
   }
 }
 
@@ -80,8 +80,14 @@
 
 .additional-product-card__cost {
   @media (min-width: @tablet-width) {
-    flex-basis: 90px;
-    text-align: end;
+    flex-basis: 93px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    flex-basis: 82px;
+    text-align: left;
   }
 }
 
@@ -90,7 +96,7 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 21px;
+    margin-top: 22px;
   }
 
   @media (min-width: @desktop-width) {

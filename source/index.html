@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html class="page__html" lang="ru">
-  <head class="page">
+<html class="page" lang="ru">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
@@ -26,20 +24,20 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-header__nav main-nav--closed">
+        <nav class="main-nav main-header__nav main-nav--nojs">
           <div class="main-nav__toggle-container">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть/скрыть меню</span>
             </button>
           </div>
           <ul class="main-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--active">
+            <li class="nav-list__item nav-list__item--index nav-list__item--active">
               <a class="nav-list__link">Главная</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item nav-list__item--catalog">
               <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item nav-list__item--form">
               <a class="nav-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -113,8 +111,8 @@
           <h2 class="container cat-example__title">Живой пример</h2>
         </div>
         <div class="cat-example__main-container">
-          <div class="cat_example__params-container">
-            <div class="cat_example__params">
+          <div class="cat-example__params-container">
+            <div class="cat-example__params">
               <p class="cat-example__desctiption">Борис сбросил 5 кг за 2 месяца,
                 просто заменив свой обычный корм на Cat Energy Slim.
                 Отличный результат без изнуряющих тренировок!
@@ -140,8 +138,10 @@
 
           <div class="cat-example__visual-effect-container">
             <div class="cat-example__visual-effect visual-effect">
-              <div class="visual-effect__image visual-effect__image--before"></div>
-              <div class="visual-effect__image visual-effect__image--after visual-effect__image--off"></div>
+              <div class="visual-effect__image-container">
+                <div class="visual-effect__image visual-effect__image--before"></div>
+                <div class="visual-effect__image visual-effect__image--after visual-effect__image--off"></div>
+              </div>
               <div class="visual-effect__toggle toggle">
                 <button class="toggle__button toggle__button--off" type="button">Было</button>
                 <div class="toggle__slide-button slide-button slide-button--off">

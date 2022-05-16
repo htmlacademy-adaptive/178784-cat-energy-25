@@ -14,20 +14,36 @@
   }
 }
 
-.visual-effect__image {
+.visual-effect__image-container {
   @media (max-width: @phone-width-only) {
     height: 247px;
-    background-size: auto 240px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: -10px;
   }
 
   @media (min-width: @tablet-width) {
+    position: absolute;
     height: 511px;
     width: 592px;
     top: 0;
-    background-size: auto 511px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -11px;
+  }
+}
+
+.visual-effect__image {
+  height: 100%;
+
+  @media (max-width: @phone-width-only) {
+    background-size: auto 232;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    background-size: auto 500px;
     background-repeat: no-repeat;
     background-position-x: center;
   }
@@ -43,10 +59,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    width: 296px;
+    position: relative;
+    width: 50%;
     left: 0;
-    top: -8px;
+    top: 0;
     background-position: 0 0;
     background-image: url("../../img/cat-before-tablet.png");
 
@@ -56,8 +72,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 9px;
-    top: -21px;
+    left: 0;
+    top: -11px;
   }
 }
 
@@ -70,9 +86,10 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    width: 296px;
+    width: 50%;
     right: 0;
     background-position: right 0 top 0;
+    background-size: auto 509px;
     background-image: url("../../img/cat-after-tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -81,7 +98,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    right: -10px;
+    right: 0;
     top: -8px;
   }
 }

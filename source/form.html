@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page__html" lang="ru">
+<html class="page" lang="ru">
 <head class="page">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
@@ -26,7 +24,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-header__nav main-nav--closed">
+      <nav class="main-nav main-header__nav main-nav--nojs">
         <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/скрыть меню</span>
@@ -36,10 +34,10 @@
           <li class="nav-list__item">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--catalog">
             <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav-list__item nav-list__item--active">
+          <li class="nav-list__item nav-list__item--form nav-list__item--active">
             <a class="nav-list__link">Подбор программы</a>
           </li>
         </ul>
@@ -66,7 +64,7 @@
               <input class="control__input" name="cat-age" value="7" type="number">
             </label>
         </fieldset>
-        <div class="horizontal-line--infinite form__horizontal-line"></div>
+        <div class="horizontal-line horizontal-line--full-width form__horizontal-line"></div>
         <fieldset class="fieldset form__program-type">
           <label class="control control--radio">
             <input class="control__input visually-hidden" name="cat-name" value="weight-loss" type="radio" checked>
@@ -84,7 +82,7 @@
             <span class="control__label--radio">Не знаю (нужен ваш совет)</span>
           </label>
         </fieldset>
-        <div class="horizontal-line--infinite form__horizontal-line"></div>
+        <div class="horizontal-line horizontal-line--full-width form__horizontal-line"></div>
       </div>
 
       <div class="form__additional-products-title section-line section-line--contacts">
@@ -118,8 +116,8 @@
       </div>
 
       <fieldset class="form__comment fieldset">
-        <legend class="form-group__title visually-hidden">Комментарий</legend>
-        <div class="container container--form">
+        <legend class="visually-hidden">Комментарий</legend>
+        <div class="container container--form control">
           <textarea class="control__input control__input--textarea" name="comment">Расскажите обо всех повадках кота
           </textarea>
         </div>
@@ -163,7 +161,7 @@
   <footer class="main-footer">
     <section class="main-footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="main-footer__contacts-address-container contacts__address-container">
+      <div class="main-footer__contacts-address-container main-footer__contacts-address-container--form contacts__address-container">
         <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
       </div>

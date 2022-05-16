@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page__html" lang="ru">
+<html class="page" lang="ru">
 <head class="page">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
@@ -26,7 +24,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-header__nav main-nav--closed">
+      <nav class="main-nav main-header__nav main-nav--nojs">
         <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/скрыть меню</span>
@@ -36,10 +34,10 @@
           <li class="nav-list__item">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
-          <li class="nav-list__item nav-list__item--active">
+          <li class="nav-list__item nav-list__item--catalog nav-list__item--active">
             <a class="nav-list__link">Каталог продукции</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--form">
             <a class="nav-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -73,19 +71,20 @@
             </picture>
 
             <div class="product-card__container">
-              <p class="product-card__title">Cat Energy PRO 500 г</p>
+              <p class="product-card__title">Cat Energy PRO
+                500 г</p>
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">500 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">500 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Курица</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Курица</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">700 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">700 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -104,19 +103,20 @@
                 width="140" height="112" alt="Cat Energy Pro Chicken 1000г">
             </picture>
             <div class="product-card__container">
-              <p class="product-card__title">Cat Energy PRO 1000 г</p>
+              <p class="product-card__title">Cat Energy PRO
+                1000 г</p>
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">1000 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">1000 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Курица</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Курица</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">1000 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">1000 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -139,15 +139,15 @@
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">500 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">500 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Рыба</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Рыба</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">700 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">700 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -170,15 +170,15 @@
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">1000 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">1000 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Рыба</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Рыба</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">1000 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">1000 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -201,15 +201,15 @@
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">500 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">500 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Гречка</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Гречка</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">400 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">400 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -232,15 +232,15 @@
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">1000 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">1000 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Гречка</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Гречка</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">700 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">700 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -264,15 +264,15 @@
               <dl class="product-card__properties">
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Масса</dt>
-                  <dd class="product-card__property-value">500 г</dd>
+                  <dd class="product-card__property-value product-card__property-value--weight">500 г</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Вкус</dt>
-                  <dd class="product-card__property-value">Рис</dd>
+                  <dd class="product-card__property-value product-card__property-value--taste">Рис</dd>
                 </div>
                 <div class="product-card__property">
                   <dt class="product-card__property-name">Цена</dt>
-                  <dd class="product-card__property-value">500 Р.</dd>
+                  <dd class="product-card__property-value product-card__property-value--cost">500 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -343,7 +343,7 @@
   <footer class="main-footer main-footer--catalog">
     <section class="main-footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="main-footer__contacts-address-container contacts__address-container">
+      <div class="main-footer__contacts-address-container main-footer__contacts-address-container--catalog contacts__address-container">
         <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__town">Санкт-Петербург</span></p>
       </div>

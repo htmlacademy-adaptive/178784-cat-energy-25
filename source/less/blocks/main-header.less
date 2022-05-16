@@ -16,7 +16,7 @@
       background-size: cover;
       position: absolute;
       top: -39px;
-      right: -20px;
+      right: 0;
       left: calc(50% + 11px);
       min-height: 700px;
     }
@@ -32,7 +32,14 @@
   }
 
   & .nav-list__link {
+    @media (min-width: @tablet-width) {
+      padding-top: 11px;
+      padding-bottom: 10px;
+    }
+
     @media (min-width: @desktop-width) {
+      padding-top: 10px;
+      padding-bottom: 8px;
       color: @white;
     }
   }
@@ -60,7 +67,7 @@
 
 .main-header__container--index {
   @media (min-width: @desktop-width) {
-    width: 1245px;
+    width: 1240px;
   }
 }
 
@@ -95,7 +102,7 @@
 
 .main-header__container-header--index {
   @media (min-width: @desktop-width) {
-    padding-left: 23px;
+    padding-left: 20px;
   }
 }
 
