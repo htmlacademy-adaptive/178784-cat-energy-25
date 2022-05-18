@@ -27,6 +27,21 @@
   border: none;
   border-radius: 6px;
   background-color: #68b738;
+  caret-color: transparent;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    border-color: #68b738;
+  }
+
+  &:focus {
+    outline: none;
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -36,14 +51,6 @@
     border-radius: 16px;
     background-color: @white;
     transform: translateX(196px);
-
-    &:active {
-      border-color: #68b738;
-    }
-
-    &:focus {
-      outline: none;
-    }
 
     &::before {
       content: "";
