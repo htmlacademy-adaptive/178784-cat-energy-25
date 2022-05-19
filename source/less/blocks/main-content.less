@@ -5,11 +5,13 @@
 }
 
 .main-content__header {
+  box-sizing: border-box;
   min-height: 302px;
   margin-bottom: 138px;
+  padding-bottom: 138px;
   background: linear-gradient(@transparent-green, @transparent-green), url("../../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 320px auto;
+  background-size: cover;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
@@ -17,6 +19,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
     width: @container-tablet-width;
     margin: 0 auto;
     margin-bottom: 49px;
@@ -32,6 +35,8 @@
 }
 
 .main-content__header-title {
+  position: relative;
+  z-index: 1;
   width: 250px;
   margin: 0 auto 25px auto;
   padding-top: 27px;
@@ -55,7 +60,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 90px;
+    margin-left: 80px;
     margin-bottom: 40px;
   }
 }
@@ -76,6 +81,10 @@
     width: 420px;
     margin-left: 89px;
     text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
   }
 }
 
@@ -161,7 +170,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
     margin-bottom: 75px;
-    padding-left: 22px;
   }
 }
 
@@ -174,6 +182,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: static;
     margin-bottom: 267px;
   }
 }
@@ -210,8 +219,8 @@
     background-image: url("../../img/cat-energy-chicken-desktop.png");
     background-size: 552px 499px;
     bottom: unset;
-    top: -313px;
-    right: 210px;
+    top: 140px;
+    right: 331px;
     height: 499px;
 
     @media (min-resolution: 2dppx) {
@@ -230,11 +239,15 @@
   @media (min-width: @tablet-width) {
     width: unset;
     margin: unset;
-    margin-left: 90px;
+    margin-left: 89px;
     padding: 17px 27px;
     font-size: 20px;
     line-height: 20px;
     text-align: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
   }
 }
 
@@ -268,7 +281,6 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 32px;
-    margin-left: 11px;
   }
 }
 
@@ -289,11 +301,11 @@
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 81px;
+    margin-bottom: 82px;
   }
 }
 

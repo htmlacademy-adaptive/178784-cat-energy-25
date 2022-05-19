@@ -1,5 +1,5 @@
 .button {
-  display: block;
+  display: inline-block;
   background-color: @basic-green;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -11,6 +11,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: @white;
   border: none;
   box-sizing: border-box;
@@ -32,19 +33,16 @@
   }
 }
 
-.button-lg {
-  font-size: 14px;
-  line-height: 18px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 26px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-}
-
 .button--secondary {
   background-color: #f2f2f2;
   color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
